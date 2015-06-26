@@ -37,6 +37,18 @@ GR::Edge* GR::Graph::addConnection(Node* begining, Node* end, bool Directed)
 	return this->edges->back();
 }
 
+// Returns number of Nodes
+sf::Uint32 GR::Graph::getNodeCount()
+{
+	return this->nodes->size();
+}
+
+// Returns pointer to n'th point (first point number is 1)
+GR::Node* GR::Graph::getNode(int n)
+{
+	return (*this->nodes)[n];
+}
+
 void GR::Graph::update()
 {
 	// Update nodes

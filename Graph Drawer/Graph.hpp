@@ -24,6 +24,11 @@ namespace GR
 		// Adds connection between 2 Nodes
 		Edge* addConnection(Node* begining, Node* end);
 		Edge* addConnection(Node* begining, Node* end,bool Directed);
+		
+		// Returns number of Nodes
+		sf::Uint32 getNodeCount();
+		// Returns pointer to n'th point (first point number is 0)
+		Node* getNode(int n);
 
 		//void removeConnection(Edge*);
 		void update();
